@@ -16,6 +16,12 @@ steps:
     packageType: sdk
     version: 3.1.300
 
+- task: UseDotNet@2
+  displayName: 'Use .NET Core SDK 2'
+  inputs:
+    packageType: sdk
+    version: 2.0.0
+
 - task: Npm@1
   displayName: 'Run npm install'
   inputs:
